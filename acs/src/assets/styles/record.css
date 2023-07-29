@@ -1,0 +1,27 @@
+.record-container{
+    height: 100%;
+    display: flex;
+}
+.list-of-students{
+    background-color: #EAE8DC;
+    width: 50%;
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.add-students{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid black;
+    height: 100%;
+}
+.addStudentForm{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    margin-top: 5em;
+}
