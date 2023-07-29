@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Navigation from './assets/components/Navigation'
-import AppRouter from './assets/components/AppRouter'
+import Navigation from './components/Navigation'
+import AppRouter from './components/AppRouter'
 function App() {
   return (
     <>
