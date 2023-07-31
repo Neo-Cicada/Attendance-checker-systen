@@ -1,22 +1,25 @@
 import React from 'react'
-import Circles from '../Circles'
+import { Box, Button, Container } from '@mui/material'
 import { useState } from 'react'
-import useRead from '../../hooks/useRead'
+import CreateSitPlan from './CreateSitPlan';
+import Attendance from './Attendance';
 export default function SitPlan() {
-  const [data, setData] = useState([]);
-
-  useRead('Students', setData);
-
-
-
-  const students = data.map(item => <Circles data={item}/>)
-
+  const [status, setStatus] = useState(true);
   return (
     <>
-      <h1 style={{textAlign: 'center'}}>Sit Plan</h1>
-      <div className='container' style={{display: 'flex', justifyContent:'space-around'}}>
-        {students}
-      </div>
+      <Box sx={{ border: '1px solid red', height: '10%',
+       display: 'flex', justifyContent: 'center',
+        alignItems: 'center', gap: '1em ' }}>
+        <Button onClick={() => setStatus(true)}>Create Sit Plan</Button>
+        <Button onClick={() =>setStatus(false)}>Attendance</Button>
+
+      </Box>
+      <Container sx={{height: '90%', border: '1px solid red'}}>
+        {status ? <CreateSitPlan/> : <Attendance/>}
+      </Container>
     </>
   )
-}
+};
+
+
+
