@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextField, Box, Button } from '@mui/material'
-import '../styles/record.css'
+import '../../styles/record.css'
 import { useState } from 'react'
 //TODO: add students, see current students, convert attendance to xsml/ arrange sit plan
 export default function Records() {

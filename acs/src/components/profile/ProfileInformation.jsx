@@ -3,7 +3,7 @@ import {
   Container, Box, TextField, FormControl,
   Select, MenuItem, Button, Typography
 } from '@mui/material'
-import useRead from '../hooks/useRead'
+import useRead from '../../hooks/useRead'
 import { useState } from 'react'
 export default function ProfileInformation() {
   const [subjects, setSubjects] = useState([])

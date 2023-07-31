@@ -3,7 +3,7 @@ import {
     Container, Box, TextField, FormControl,
     Select, MenuItem, Button, Typography
   } from '@mui/material'
-  import useUpload from '../hooks/useUpload'
+  import useUpload from '../../hooks/useUpload'
   import { useState } from 'react'
 export default function ManageSubjectAndSections() {
     const [subject, setSubject] = useState('')

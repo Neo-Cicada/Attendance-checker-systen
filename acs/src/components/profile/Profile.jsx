@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/profile.css'
+import '../../styles/profile.css'
 import ManageSubjectAndSections from './ManageSubjectAndSections'
 import ProfileInformation from './ProfileInformation'
 export default function Profile() {

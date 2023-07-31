@@ -1,5 +1,5 @@
 import React from 'react'
-import Circles from './Circles'
+import Circles from '../Circles'
 export default function SitPlan() {
 
   const records = [

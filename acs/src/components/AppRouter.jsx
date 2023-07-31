@@ -1,9 +1,9 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './Home'
-import SitPlan from './SitPlan'
-import Records from './Records'
-import Profile from './Profile'
+import SitPlan from './sitplan/SitPlan'
+import Records from './records/Records'
+import Profile from './profile/Profile'
 const AppRouter = () => {
     return (
         <Routes>
